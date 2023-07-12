@@ -1,4 +1,4 @@
-import * as TodosAccess from './todosAcess'
+import * as TodosAccess from '../dataLayer/todosAcess'
 import { CreateTodoRequest } from '../requests/CreateTodoRequest'
 import { UpdateTodoRequest } from '../requests/UpdateTodoRequest'
 import { createLogger } from '../utils/logger'

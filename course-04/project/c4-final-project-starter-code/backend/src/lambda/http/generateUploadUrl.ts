@@ -4,9 +4,9 @@ import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda'
 import * as middy from 'middy'
 import { cors, httpErrorHandler } from 'middy/middlewares'
 
-import { s3GeneratePresignedUrl } from '../../helpers/attachmentUtils'
+import { s3GeneratePresignedUrl } from '../../fileStorage/attachmentUtils'
 import { getUserId } from '../utils'
-import { updateTodoAttachmentUrl } from '../../helpers/todos'
+import { updateTodoAttachmentUrl } from '../../businessLogic/todos'
 
 import { createLogger } from '../../utils/logger'
 
